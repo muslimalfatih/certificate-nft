@@ -84,8 +84,8 @@ cast send $NFT_CONTRACT "mintNFT(address,string)" \
 
 Latest Deployment:
 - Network: Mandala Chain
-- Contract: 0x5266D0E619c1f50F8d5Db716E2Afedad498D0062
-- Explorer: https://niskala.mandalachain.io/address/0x5266D0E619c1f50F8d5Db716E2Afedad498D0062
+- Contract: 0xcDCf9295EB880C166E73Ef9D42f07eD9c2E1B7Ee
+- Explorer: https://niskala.mandalachain.io/address/0xcDCf9295EB880C166E73Ef9D42f07eD9c2E1B7Ee
 
 ## Testing
 

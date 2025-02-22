@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
-import "lib/openzeppelin-contracts/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
-import "lib/openzeppelin-contracts/contracts/access/Ownable.sol";
-import "lib/openzeppelin-contracts/contracts/utils/Counters.sol";
-import "lib/openzeppelin-contracts/contracts/utils/Base64.sol";
-import "lib/openzeppelin-contracts/contracts/utils/Strings.sol";
-import "lib/openzeppelin-contracts/contracts/token/ERC721/IERC721.sol";
+import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/utils/Counters.sol";
+import "@openzeppelin/contracts/utils/Base64.sol";
+import "@openzeppelin/contracts/utils/Strings.sol";
+import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
 
 contract CertificateNFT is ERC721URIStorage, Ownable {
     using Counters for Counters.Counter;
@@ -35,7 +35,7 @@ contract CertificateNFT is ERC721URIStorage, Ownable {
         string memory metadata = string(abi.encodePacked(
             '{"name": "Mandala Academy NFT #', tokenId.toString(),
             '", "description": "A certificate NFT that student already completed the course", ',
-            '"image": "', imageUrl, '"}'
+            '"image_url": "', imageUrl, '"}'
         ));
 
         // Set token URI
